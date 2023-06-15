@@ -1,9 +1,7 @@
 import react from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ImFacebook2 } from 'react-icons/Im';
-import { BsYoutube } from 'react-icons/Bs';
-import {BsBookFill}  from 'react-icons/Bs';
+
 const Footer = ()=>  {
     return(
         <div  className='bg-green-200 z-50 sticky bottom-0'>
@@ -26,13 +24,13 @@ const Footer = ()=>  {
       </a>
       <Link href={"https://www.piaic.org/"} className="ml-5 text-3xl hover:text-green-950 text-yellow-500">
 
-        <BsBookFill/>
+      <Image src={require('../../../public/asseds/pic/piaic1.png')} width={40} height={40} alt='facebook'/>
       </Link>
       <Link href={"https://www.youtube.com/watch?v=hfDSmDgbFRY&list=PLplW4d4HPsEJ_KTL4rT0tpYSlMTOG0s0X&index=9"} className="ml-5 text-3xl hover:text-pink-700 text-red-500">
-      <BsYoutube/>
+      <Image src={require('../../../public/asseds/pic/you1.png')} width={40} height={40} alt='facebook'/>
       </Link>
       <Link href={"https://web.facebook.com/profile.php?id=100090638882853"} className="ml-5 text-2xl  hover:text-pink-950 text-blue-700">
-      <ImFacebook2/>
+      <Image src={require('../../../public/asseds/pic/fac1.png')} width={40} height={40} alt='facebook'/>
          
       </Link>
     </span>

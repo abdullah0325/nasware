@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { AiOutlineCloudDownload } from 'react-icons/Ai';
+
 import Image from 'next/image';
 import react from 'react'
 const Nav = ()=>  {
@@ -26,7 +26,7 @@ const Nav = ()=>  {
       <a href='/asseds/cv/my-cv.pdf'>
     <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none
      hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Downlod Cv
-    < AiOutlineCloudDownload className='hover:bg-red-700 text-blue-700 text-2xl ml-2'/>
+    < Image src={require('../../../public/asseds/pic/dow1.png')} alt='dow1' width={30} height={30} className='hover:bg-red-700 text-blue-700 text-2xl ml-2'/>
       
     </button>
     </a>
